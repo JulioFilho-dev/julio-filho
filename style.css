@@ -1,4 +1,4 @@
-/* ---------- tokens ---------- */
+
 :root{
   --bg: #0B1A28;
   --bg-panel: #11263A;
@@ -41,7 +41,7 @@ a{ color: inherit; text-decoration: none; }
   mask-image: radial-gradient(ellipse 80% 60% at 50% 0%, black 40%, transparent 90%);
 }
 
-/* ---------- nav ---------- */
+
 .nav{
   position: sticky;
   top:0;
@@ -77,7 +77,7 @@ a{ color: inherit; text-decoration: none; }
 }
 .nav-links a:hover::after{ width: 100%; }
 
-/* ---------- hero ---------- */
+
 .hero{
   position: relative;
   z-index: 1;
@@ -145,7 +145,7 @@ a{ color: inherit; text-decoration: none; }
   color: var(--text-muted);
 }
 
-/* hero schematic svg */
+
 .hero-schematic{
   width: min(360px, 34vw);
   min-width: 220px;
@@ -158,7 +158,6 @@ a{ color: inherit; text-decoration: none; }
 .s-node{ fill: var(--amber); }
 .s-core{ fill: none; stroke: var(--teal); stroke-width: 1.5; }
 
-/* ---------- sections ---------- */
 main{ position: relative; z-index: 1; }
 
 .section{
@@ -234,7 +233,7 @@ main{ position: relative; z-index: 1; }
 .spec-list span{ color: var(--text-muted); }
 .spec-list b{ font-weight: 600; text-align: right; }
 
-/* timeline / experiencia */
+
 .timeline{
   position: relative;
   padding-left: 28px;
@@ -271,7 +270,7 @@ main{ position: relative; z-index: 1; }
 
 .commit p{ margin:0; color: var(--text-muted); font-size: 0.96rem; max-width: 620px; }
 
-/* formacao */
+
 .cards-row{
   display:grid;
   grid-template-columns: repeat(3, 1fr);
@@ -304,7 +303,32 @@ main{ position: relative; z-index: 1; }
 .module-org{ margin:0; color: var(--text-muted); font-size: 0.92rem; }
 .module-meta{ margin:0; font-family: var(--mono); font-size: 12px; color: var(--text-muted); }
 
-/* habilidades */
+
+.project-card{
+  border: 1px solid var(--line-strong);
+  background: var(--bg-panel);
+  padding: 26px;
+}
+.project-head{
+  display:flex;
+  justify-content: space-between;
+  align-items: baseline;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-bottom: 14px;
+}
+.project-head h3{ margin:0; font-size: 1.15rem; }
+.project-link{
+  font-family: var(--mono);
+  font-size: 12.5px;
+  color: var(--teal);
+  white-space: nowrap;
+  transition: color .2s ease;
+}
+.project-link:hover{ color: var(--amber); }
+.project-card p{ color: var(--text-muted); margin: 0 0 18px; font-size: 0.96rem; max-width: 680px; }
+
+
 .skills-group{ margin-bottom: 32px; }
 .skills-label{
   font-family: var(--mono);
@@ -332,7 +356,7 @@ main{ position: relative; z-index: 1; }
 }
 .pin-alt::before{ background: var(--amber); }
 
-/* contato */
+
 .section-contact{ padding-bottom: 60px; }
 .contact-intro{ color: var(--text-muted); margin-bottom: 34px; max-width: 520px; }
 
@@ -358,7 +382,7 @@ main{ position: relative; z-index: 1; }
 }
 .port-value{ font-size: 14.5px; }
 
-/* footer */
+
 .footer{
   position: relative;
   z-index: 1;
